@@ -76,7 +76,7 @@ display_result()
 set_test()
 {
     ARG=$1
-    RES=$($PUSH $ARG | cat -e)
+    RES=$($PUSH $ARG 2>&1 | cat -e)
     EXPECTED_RES=$2
     display_result $PUSH
 }
