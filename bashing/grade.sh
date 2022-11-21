@@ -104,7 +104,9 @@ set_test "text" "Error$"
 set_test "0 1 2 3.5 4" "Error$"
 set_test "1 * 0" "Error$"
 set_test "! # $" "Error$"
-set_test "0 +1 2 3" "Error$"
+set_test "0 ++1 2 3" "rr" $1 "Error$"
+set_test "0 1- 2 3" "rr" $1 "Error$"
+set_test "0 + 2 3" "rr" $1 "Error$"
 set_test "one two three" "Error$"
 display_error
 

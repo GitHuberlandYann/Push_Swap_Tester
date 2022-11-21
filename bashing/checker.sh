@@ -60,7 +60,9 @@ set_test "text" "" $1 "Error$"
 set_test "0 1 2 3.5 4" "" $1 "Error$"
 set_test "1 * 0" "sa" $1 "Error$"
 set_test "! # $" "ra" $1 "Error$"
-set_test "0 +1 2 3" "rr" $1 "Error$"
+set_test "0 ++1 2 3" "rr" $1 "Error$"
+set_test "0 1- 2 3" "rr" $1 "Error$"
+set_test "0 + 2 3" "rr" $1 "Error$"
 set_test "one two three" "" $1 "Error$"
 set_test "3 2 one 0" "" $1 "Error$"
 display_error
@@ -131,7 +133,7 @@ set_test "0 9 1 8 2 7 3 6 4 5" "sa
 pb
 rrr
 " $1 "KO$"
-set_test "0 2 1" "sa
+set_test "0 2 +1" "sa
 " $1 "KO$"
 set_test "0 2 1" "rra
 sb
@@ -166,7 +168,7 @@ display_error
 
 printf_test "good instructions"
 set_test "0 1 2" "" $1 "OK$"
-set_test "0 5 984 2165414 2147483647" "" $1 "OK$"
+set_test "0 +5 984 2165414 2147483647" "" $1 "OK$"
 set_test "-2147483648 -2147483647 -1 0 1 2147483646 2147483647" "" $1 "OK$"
 set_test "0 9 1 8 2" "pb
 ra
