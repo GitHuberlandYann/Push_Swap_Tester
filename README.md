@@ -37,18 +37,18 @@ In general, I am using your Makefile in order to generate the files I am using, 
 Here are some examples of commands this tester accepts
 
 ```
-/Push_Swap $> ./run.sh							# Execute 5 tests with lists of 5, 10, 50, 100, and 500 numbers
+/Push_Swap $> ./run.sh                        # Execute 5 tests with lists of 5, 10, 50, 100, and 500 numbers
 
-/Push_Swap $> ./run.sh <number>					# Execute <number> of tests with lists of 5, 10, 50, 100, and 500 numbers
+/Push_Swap $> ./run.sh <number>               # Execute <number> of tests with lists of 5, 10, 50, 100, and 500 numbers
 
-/Push_Swap $> ./run.sh parrot					# Curiosity killed the cat
+/Push_Swap $> ./run.sh parrot                 # Curiosity killed the cat
 
-/Push_Swap $> ./run.sh <numberA> <numberB>		# Execute <numberA> of tests with a list of <numberB> numbers, then display best and worst cases
+/Push_Swap $> ./run.sh <numberA> <numberB>    # Execute <numberA> of tests with a list of <numberB> numbers, then display best and worst cases
 
-/Push_Swap $> ./run.sh -c <path_to_checker>		# Execute tests with good and bad inputs on the checker provided by <path_to_checker>
+/Push_Swap $> ./run.sh -c <path_to_checker>   # Execute tests with good and bad inputs on the checker provided by <path_to_checker>
 
-/Push_Swap $> ./run.sh -g						# Execute error tests on the executables then 5 tests with lists of 5, 100, and 500 numbers + grade
+/Push_Swap $> ./run.sh -g                     # Execute error tests on the executables then 5 tests with lists of 5, 100, and 500 numbers + grade
 
-/Push_Swap $> ./run.sh -g <number>				# Execute error tests on the executables then <number> of tests with lists of 5, 100, and 500 numbers + grade
+/Push_Swap $> ./run.sh -g <number>            # Execute error tests on the executables then <number> of tests with lists of 5, 100, and 500 numbers + grade
 
 ```
