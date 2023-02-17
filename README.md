@@ -30,6 +30,17 @@ mv Push_Swap_Tester/* .
 
 You will now be able to use the `run.sh` executable as shown bellow.
 
+### Troubleshooting:
+
+- **./checker: Exec format error**: If you are using linux, rename the following file:
+```
+mv checker_linux checker
+```
+- **ruby: not found**: This tester needs ruby to run. Install it via your package manager, for example for debian/ubuntu
+```
+sudo apt install ruby
+```
+
 ## Commands:
 
 In general, I am using your Makefile in order to generate the files I am using, so make sure the executables' name are `push_swap` and `checker` for your main and bonus parts.
